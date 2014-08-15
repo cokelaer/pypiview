@@ -10,15 +10,14 @@ PYPIView
 .. image:: https://secure.travis-ci.org/cokelaer/pypiview.png
    :target: http://travis-ci.org/cokelaer/pypiview
 
-.. image:: https://coveralls.io/r/cokelaer/pypiview/badge.png
-   :target: https://coveralls.io/r/davidfischer-ch/pypiview
+.. image:: https://coveralls.io/repos/cokelaer/pypiview/badge.png
+  :target: https://coveralls.io/r/cokelaer/pypiview
 
-.. .. image:: https://landscape.io/github/davidfischer-ch/pypiview/master/landscape.png
-   :target: https://landscape.io/github/davidfischer-ch/pypiview/master
+.. .. todo::   https://landscape.io/
 
-.. .. image:: https://badge.waffle.io/davidfischer-ch/pypiview.png?label=ready&title=Ready 
-   :target: https://waffle.io/davidfischer-ch/pypiview
-   :alt: 'Stories in Ready'
+.. image:: https://badge.waffle.io/cokelaer/pypiview.png?label=ready&title=Ready 
+   :target: https://waffle.io/cokelaer/pypiview
+
 
 
 
