@@ -7,16 +7,16 @@ PYPIView
 .. image:: https://pypip.in/d/pypiview/badge.png
    :target: https://crate.io/packages/pypiview/
 
-.. image:: https://secure.travis-ci.org/davidfischer-ch/pypiview.png
-   :target: http://travis-ci.org/davidfischer-ch/pypiview
+.. image:: https://secure.travis-ci.org/cokelaer/pypiview.png
+   :target: http://travis-ci.org/cokelaer/pypiview
 
-.. image:: https://coveralls.io/repos/davidfischer-ch/pypiview/badge.png
+.. image:: https://coveralls.io/r/cokelaer/pypiview/badge.png
    :target: https://coveralls.io/r/davidfischer-ch/pypiview
 
-.. image:: https://landscape.io/github/davidfischer-ch/pypiview/master/landscape.png
+.. .. image:: https://landscape.io/github/davidfischer-ch/pypiview/master/landscape.png
    :target: https://landscape.io/github/davidfischer-ch/pypiview/master
 
-.. image:: https://badge.waffle.io/davidfischer-ch/pypiview.png?label=ready&title=Ready 
+.. .. image:: https://badge.waffle.io/davidfischer-ch/pypiview.png?label=ready&title=Ready 
    :target: https://waffle.io/davidfischer-ch/pypiview
    :alt: 'Stories in Ready'
 
