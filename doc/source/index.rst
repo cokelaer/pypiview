@@ -13,8 +13,8 @@ PYPIView documentation
 .. image:: https://secure.travis-ci.org/cokelaer/pypiview.png
     :target: http://travis-ci.org/cokelaer/pypiview
 
-.. image:: https://coveralls.io/repos/cokelaer/pypiview/badge.png
-   :target: https://coveralls.io/r/cokelaer/pypiview
+.. image:: https://coveralls.io/repos/cokelaer/pypiview/badge.png?branch=master 
+     :target: https://coveralls.io/r/cokelaer/pypiview?branch=master 
 
 .. image:: https://landscape.io/github/cokelaer/pypiview/master/landscape.png
    :target: https://landscape.io/github/cokelaer/pypiview/master

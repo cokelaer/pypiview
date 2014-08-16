@@ -5,13 +5,13 @@ PYPIView
     :target: https://badge.fury.io/py/pypiview.svg
 
 .. image:: https://pypip.in/d/pypiview/badge.png
-   :target: https://crate.io/packages/pypiview/
+    :target: https://crate.io/packages/pypiview/
 
 .. image:: https://secure.travis-ci.org/cokelaer/pypiview.png
-   :target: http://travis-ci.org/cokelaer/pypiview
+    :target: http://travis-ci.org/cokelaer/pypiview
 
-.. image:: https://coveralls.io/repos/cokelaer/pypiview/badge.png
-  :target: https://coveralls.io/r/cokelaer/pypiview
+.. image:: https://coveralls.io/repos/cokelaer/pypiview/badge.png?branch=master 
+    :target: https://coveralls.io/r/cokelaer/pypiview?branch=master 
 
 .. image:: https://landscape.io/github/cokelaer/pypiview/master/landscape.png
    :target: https://landscape.io/github/cokelaer/pypiview/master
