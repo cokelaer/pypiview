@@ -56,7 +56,7 @@ class PYPIView(object):
         :param bool verbose: print some information.
 
         """
-        if isinstance(packages, (str, unicode)):
+        if isinstance(packages, (str)):
             packages = [packages]
         self.verbose = verbose
         self.tss = []
@@ -92,7 +92,7 @@ class PYPIView(object):
                 times.append([tt[0], tt[1], tt[2]])
                 downloads.append(download)
         df = pd.Series(downloads, [datetime.datetime(*x) for x in times], 
-                name=package)
+            name=package)
         df = df.sort_index()
         return df
 
