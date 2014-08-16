@@ -62,7 +62,7 @@ class PYPIView(object):
         self.tss = []
 
         for package in packages:
-            print("Downloading data for {} package".format(package))
+            print("Downloading data for {0} package".format(package))
             ts = self.get_data_one_package(package)
             self.tss.append(ts.to_frame())
 

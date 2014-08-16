@@ -4,6 +4,28 @@
 PYPIView documentation
 #############################
 
+.. image:: https://badge.fury.io/py/pypiview.svg
+    :target: https://pypi.python.org/pypi/pypiview
+
+.. image:: https://pypip.in/d/pypiview/badge.png
+    :target: https://crate.io/packages/pypiview/
+
+.. image:: https://secure.travis-ci.org/cokelaer/pypiview.png
+    :target: http://travis-ci.org/cokelaer/pypiview
+
+.. image:: https://coveralls.io/repos/cokelaer/pypiview/badge.png
+   :target: https://coveralls.io/r/cokelaer/pypiview
+
+.. image:: https://landscape.io/github/cokelaer/pypiview/master/landscape.png
+   :target: https://landscape.io/github/cokelaer/pypiview/master
+
+.. image:: https://badge.waffle.io/cokelaer/pypiview.png?label=ready&title=Ready 
+   :target: https://waffle.io/cokelaer/pypiview
+
+
+
+
+
 
 **PYPIView** package provides a simple class to plot the number of downloads of a Pypi package (or several). The download counting is perfomed by the `vanity <https://pypi.python.org/pypi/vanity/2.0.3>`_ package. The plotting is performed with the  `Pandas <http://pandas.pydata.org/>`_ package.
 
@@ -58,13 +80,6 @@ Example::
     pypiview requests --verbose --logy --lw 2 --fontsize 16
 
     pypiview setuptools distribute --verbose --logy --lw 2 --fontsize 16
-
-
- 
-
-
-
-
 
 
 Reference Guide
