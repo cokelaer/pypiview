@@ -13,7 +13,8 @@ PYPIView
 .. image:: https://coveralls.io/repos/cokelaer/pypiview/badge.png
   :target: https://coveralls.io/r/cokelaer/pypiview
 
-.. .. todo::   https://landscape.io/
+.. image:: https://landscape.io/github/cokelaer/pypiview/master/landscape.png
+   :target: https://landscape.io/github/cokelaer/pypiview/master
 
 .. image:: https://badge.waffle.io/cokelaer/pypiview.png?label=ready&title=Ready 
    :target: https://waffle.io/cokelaer/pypiview
