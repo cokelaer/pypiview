@@ -12,7 +12,7 @@ def test_pypiview():
 
 
 def test_help():
-    pypiview.help()
+    pypiview.Help()
 
 
 def test_main():

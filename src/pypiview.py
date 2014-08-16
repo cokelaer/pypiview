@@ -23,7 +23,6 @@
 """
 import datetime
 import sys
-import os
 import vanity
 import pandas as pd
 import pylab
@@ -92,7 +91,7 @@ class PYPIView(object):
                 tt = dtime.timetuple()
                 times.append([tt[0], tt[1], tt[2]])
                 downloads.append(download)
-        df = pd.Series(downloads, [datetime.datetime(*x) for x in times],
+        df = pd.Series(downloads, [datetime.datetime(*x) for x in times], 
                 name=package)
         df = df.sort_index()
         return df
@@ -129,7 +128,7 @@ class PYPIView(object):
 
 
 
-def help():
+def Help():
     print("T.C, Aug 2014\n")
     print("Usage: \n")
     print("\tpypiview [pkgnames]\n")
@@ -150,12 +149,12 @@ def main(show=True):
     args = sys.argv
 
     if "--help" in args:
-        help()
+        Help()
         return
 
     # could use argparse but there are just a few parameters.
     if len(args)<2:
-        help()
+        Help()
         return
 
     if "--verbose" in args:
