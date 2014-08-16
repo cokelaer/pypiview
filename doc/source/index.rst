@@ -67,7 +67,7 @@ Alternatively, you can look at several packages at the same time, which is handy
     :width: 80%
 
     from pypiview import PYPIView
-    p = PYPIView("requests")
+    p = PYPIView(["setuptools", "distribute", "requests"])
     p.plot(logy=True, lw=1, fontsize=20)
 
 

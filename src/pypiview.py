@@ -119,11 +119,11 @@ class PYPIView(object):
         """
 
         self.df.cumsum().plot(marker=marker, lw=lw, fontsize=fontsize, logy=logy)
-        pylab.legend()
+        pylab.legend(loc="upper left")
         pylab.title("Cumulative downloads", fontsize=fontsize)
 
         self.df.plot(marker=marker, lw=lw, fontsize=fontsize, logy=logy)
-        pylab.legend()
+        pylab.legend(loc="upper left")
         pylab.title("Downloads of each release")
 
 
