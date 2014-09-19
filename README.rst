@@ -2,7 +2,7 @@ PYPIView
 #########
 
 .. image:: https://badge.fury.io/py/pypiview.svg
-    :target: https://badge.fury.io/py/pypiview.svg
+    :target: https://pypi.python.org/pypi/pypiview
 
 .. image:: https://pypip.in/d/pypiview/badge.png
     :target: https://crate.io/packages/pypiview/
