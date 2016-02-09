@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 
 _MAJOR               = 0
 _MINOR               = 9
-_MICRO               = 2
+_MICRO               = 3
 version              = '%d.%d.%d' % (_MAJOR, _MINOR, _MICRO)
 release              = '%d.%d' % (_MAJOR, _MINOR)
 
@@ -50,7 +50,7 @@ setup(
     package_dir = {'':'src'},
     #packages = ["pypiview"],
 
-    install_requires = ['vanity', 'numpy', 'pandas', 'matplotlib'],
+    install_requires = ['vanity>=2.2', 'numpy', 'pandas', 'matplotlib'],
 
     #use_2to3 = True, # causes issue with nosetests
 

@@ -41,7 +41,7 @@ class PYPIView(object):
         from pypiview import PYPIView
         p = PYPIView(["requests"], verbose=False)
         p.plot(logy=True)
-        
+
 
 
     The attribute :attr:`df` contains the dataframe with all results.
@@ -68,30 +68,34 @@ class PYPIView(object):
 
         self.df = pd.concat(self.tss)
         self.df = self.df.sort_index()
+        self.df = self.df.fillna(method='bfill').fillna(0)
         if self.verbose:
             print(self.df)
-         
+
     def get_data_one_package(self, package):
         """Return the data for one package
-        
+
         :param str pacakge: a single package name
         :return: a Pandas time series.
 
         """
-
-
-        releases = list(vanity.package_releases([package]))[0][1]
         downloads = []
         times = []
-        data = list(vanity.release_data([package]))
-        for i in range(0, len(releases)):
-            if len(data[i][0]):
-                dtime = data[i][0][0]['upload_time']
-                download = data[i][0][0]['downloads']
+        for data, metadata in vanity.get_release_info([package]):
+            if len(data) == 0:
+                continue
+
+            data = data[0]
+
+            if "upload_time" in data.keys() and \
+                "downloads" in data.keys():
+                dtime = data['upload_time']
                 tt = dtime.timetuple()
                 times.append([tt[0], tt[1], tt[2]])
+
+                download = data['downloads']
                 downloads.append(download)
-        df = pd.Series(downloads, [datetime.datetime(*x) for x in times], 
+        df = pd.Series(downloads, [datetime.datetime(*x) for x in times],
             name=package)
         df = df.sort_index()
         return df
@@ -103,7 +107,7 @@ class PYPIView(object):
 
         :param int lw: width of the curves
         :param int fontsize: fontsize used in titles
-        :param marker: 
+        :param marker:
         :param bool logy: set y-axis to logarithmic scale
 
 
@@ -118,13 +122,34 @@ class PYPIView(object):
 
         """
 
-        self.df.cumsum().plot(marker=marker, lw=lw, fontsize=fontsize, logy=logy)
-        pylab.legend(loc="upper left")
-        pylab.title("Cumulative downloads", fontsize=fontsize)
+        times = self.df.index
+        fig, (ax1, ax2) = pylab.subplots(2,1, figsize=(12,8))
+        fig.autofmt_xdate()
+        
+        for this in self.df.columns:
+            data = self.df[this].values
+            ax1.plot(times, data, lw=lw, marker='o')
+            ax2.plot(times, pylab.cumsum(data), lw=lw, marker='o')
+       
+ 
+        ax1.legend(list(self.df.columns), loc="upper left")
+        ax1.set_title("Downloads of each release", fontsize=fontsize)
+        ax1.grid(True)
+        #ax1.xticks(rotation=45, fontsize=fontsize)
+        ax2.legend(list(self.df.columns), loc="upper left")
+        ax2.set_title("Cumulative downloads of each release", fontsize=fontsize)
+        ax2.grid(True)
+        #ax2.xticks(rotation=45, fontsize=fontsize)
 
-        self.df.plot(marker=marker, lw=lw, fontsize=fontsize, logy=logy)
-        pylab.legend(loc="upper left")
-        pylab.title("Downloads of each release")
+        try:
+            pylab.tight_layout()
+        except:
+            pass
+        if logy:
+            pylab.semilogy()
+
+
+
 
 
 
@@ -143,6 +168,7 @@ def Help():
     print("\nExamples:\n")
     print("    pypiview requests --verbose --logy --lw 2 --fontsize 16\n")
     print("    pypiview setuptools distribute --verbose --logy --lw 2 --fontsize 16\n")
+
 
 def main(show=True):
     """The main executable"""
