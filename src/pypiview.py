@@ -125,13 +125,13 @@ class PYPIView(object):
         times = self.df.index
         fig, (ax1, ax2) = pylab.subplots(2,1, figsize=(12,8))
         fig.autofmt_xdate()
-        
+
         for this in self.df.columns:
             data = self.df[this].values
             ax1.plot(times, data, lw=lw, marker='o')
             ax2.plot(times, pylab.cumsum(data), lw=lw, marker='o')
-       
- 
+
+
         ax1.legend(list(self.df.columns), loc="upper left")
         ax1.set_title("Downloads of each release", fontsize=fontsize)
         ax1.grid(True)
@@ -146,7 +146,8 @@ class PYPIView(object):
         except:
             pass
         if logy:
-            pylab.semilogy()
+            ax1.semilogy()
+            ax2.semilogy()
 
 
 
