@@ -4,9 +4,6 @@ PYPIView
 .. image:: https://badge.fury.io/py/pypiview.svg
     :target: https://pypi.python.org/pypi/pypiview
 
-.. image:: https://pypip.in/d/pypiview/badge.png
-    :target: https://crate.io/packages/pypiview/
-
 .. image:: https://secure.travis-ci.org/cokelaer/pypiview.png
     :target: http://travis-ci.org/cokelaer/pypiview
 
