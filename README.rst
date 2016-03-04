@@ -13,14 +13,10 @@ PYPIView
 .. image:: https://landscape.io/github/cokelaer/pypiview/master/landscape.png
    :target: https://landscape.io/github/cokelaer/pypiview/master
 
-.. image:: https://badge.waffle.io/cokelaer/pypiview.png?label=ready&title=Ready 
-   :target: https://waffle.io/cokelaer/pypiview
-
-
-
 
 
 **PYPIView** package provides a simple class to visualise the number of downloads of a Pypi package (or several packages). The information of downloads is retrieved via the `vanity <https://pypi.python.org/pypi/vanity/2.0.3>`_ package. The plotting is performed with the  `Pandas <http://pandas.pydata.org/>`_ package.
+
 
 Installation
 ==============
@@ -41,8 +37,14 @@ Usage
 
 
 
-.. image:: http://pythonhosted.org//pypiview/_images/index-1_00.png
-    :target: http://pythonhosted.org//pypiview/_images/index-1_00.png
+
+.. image:: http://pythonhosted.org//pypiview/_images/index-1.png
+    :target: http://pythonhosted.org//pypiview/_images/index-1.png
+
+Contributions
+===============
+
+Please see http://github.com/cokelaer/pypiview
 
 
 

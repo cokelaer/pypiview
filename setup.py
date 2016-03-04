@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 
 _MAJOR               = 0
 _MINOR               = 9
-_MICRO               = 3
+_MICRO               = 4
 version              = '%d.%d.%d' % (_MAJOR, _MINOR, _MICRO)
 release              = '%d.%d' % (_MAJOR, _MINOR)
 
@@ -14,9 +14,9 @@ metainfo = {
     'license' : 'GPL',
     'download_url' : ['http://pypi.python.org/pypi/pypiview'],
     'url' : ["http://pythonhosted.org/pypiview/"],
-    'description': "Utility to visualise the number of downloads of a package available on Pypi website" ,
+    'description': "Utility to visualise the number of downloads of package(s) available on Pypi website" ,
     'platforms' : ['Linux', 'Unix', 'MacOsX', 'Windows'],
-    'keywords' : [''],
+    'keywords' : ['pypi', 'downloads'],
     'classifiers' : [
           'Development Status :: 5 - Production/Stable',
           'Intended Audience :: Developers',
