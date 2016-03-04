@@ -18,7 +18,7 @@ metainfo = {
     'platforms' : ['Linux', 'Unix', 'MacOsX', 'Windows'],
     'keywords' : ['pypi', 'downloads'],
     'classifiers' : [
-          'Development Status :: 5 - Production/Stable',
+          'Development Status :: 6 - Mature',
           'Intended Audience :: Developers',
           'Intended Audience :: System Administrators',
           'License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)',
